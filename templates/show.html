@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>User Request</h1>
+    <h4>Name: {{session['username']}}</h3>
+    <h5>{{session['userlocation']}}</h3>
+    <h6>{{session['userlanguage']}}</h3>
+    <H6>message</H6><p>{{session['usermessage']}}</p>
+</body>
+</html>
